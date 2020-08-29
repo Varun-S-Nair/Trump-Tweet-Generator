@@ -1,13 +1,19 @@
 # Trump-Tweet-Generator
 Uses RNNs (and a Markov Model) and a dataset of Trump tweets to write its own novel Trump tweets
 
-There are two ways to get output from this repository:
+There are three ways to get output from this repository:
 
-1. Markov Model (Recommended)
+1. GPT-2 Model (Recommended)
+
+Navigate to the GPT-2 Folder (Trump-Tweet-Generator/GPT-2Backend) and run all the cells in the Trump_GPT2_Train_Colab.ipynb file
+
+Preferably run this on Google Colab, you'll have to edit a couple lines to get this to work on vanilla Jupyter Notebook
+
+2. Markov Model (Slightly Less Recommended)
 
 Prerequisite: 
 
-Follow the instructions (JUST STEP 0) to download an appropriate java environment for your OS at one of the following links:
+Follow the instructions to download an appropriate java environment for your OS at one of the following links:
 MAC: https://lift.cs.princeton.edu/java/mac/
 Windows: https://lift.cs.princeton.edu/java/windows/
 Linux: https://lift.cs.princeton.edu/java/linux/
@@ -26,7 +32,7 @@ Change y to change the amount of characters that the model will output.
 Example: java-introcs TextGenerator 15 1000 < donald-tweets-new-clean.txt -> Outputs 1000 characters of a 
 15 kgram Markov Model
 
-2. RNN (Experimental)
+3. RNN (Experimental)
 
 Navigate to the RNNBackend directory and run all the cells of the Trump_RNN.ipynb file.
 
